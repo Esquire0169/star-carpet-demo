@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Aurora",
+    "slug": "aurora",
+    "count": 2,
+    "image": "https://images.unsplash.com/photo-1600166894406-bd4a2d0f5b8a?w=900&q=80",
+    "description": "Демо-коллекция Aurora: шаблонные модели для презентации"
+  },
+  {
+    "name": "Nordic",
+    "slug": "nordic",
+    "count": 2,
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80",
+    "description": "Демо-коллекция Nordic: шаблонные модели для презентации"
+  },
+  {
+    "name": "Orient",
+    "slug": "orient",
+    "count": 3,
+    "image": "https://images.unsplash.com/photo-1615873968403-89e068629265?w=900&q=80",
+    "description": "Демо-коллекция Orient: шаблонные модели для презентации"
+  },
+  {
+    "name": "Kids",
+    "slug": "kids",
+    "count": 1,
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80",
+    "description": "Демо-коллекция Kids: шаблонные модели для презентации"
+  },
+  {
+    "name": "Path",
+    "slug": "path",
+    "count": 2,
+    "image": "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=900&q=80",
+    "description": "Демо-коллекция Path: шаблонные модели для презентации"
+  },
+  {
+    "name": "Loft",
+    "slug": "loft",
+    "count": 2,
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80",
+    "description": "Демо-коллекция Loft: шаблонные модели для презентации"
+  }
+]

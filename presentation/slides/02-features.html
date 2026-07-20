@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111; }
+    .slide {
+      width: 1920px;
+      height: 1080px;
+      position: relative;
+      overflow: hidden;
+      font-family: "Arial Unicode MS", Arial, Helvetica, sans-serif;
+      color: #1a1714;
+      page-break-after: always;
+    }
+    .bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(139,58,58,0.18), transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(90,110,100,0.16), transparent 45%),
+        linear-gradient(145deg, #f6f3ee 0%, #ebe4d8 45%, #e2d8c8 100%);
+    }
+    .bg.dark {
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(139,58,58,0.35), transparent 50%),
+        linear-gradient(160deg, #1a1714 0%, #2a2320 55%, #3d2a28 100%);
+      color: #f6f3ee;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      padding: 96px 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .eyebrow {
+      font-size: 18px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      opacity: 0.65;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 92px;
+      line-height: 1.05;
+      font-weight: 700;
+      max-width: 1400px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 72px;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .lead {
+      font-size: 28px;
+      line-height: 1.45;
+      max-width: 980px;
+      opacity: 0.78;
+      font-weight: 500;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 20px;
+    }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .card {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(26,23,20,0.1);
+      border-radius: 28px;
+      padding: 32px 34px;
+      backdrop-filter: blur(8px);
+    }
+    .bg.dark .card {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(255,255,255,0.12);
+      color: #f6f3ee;
+    }
+    .card .num {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 40px;
+      color: #8b3a3a;
+      margin-bottom: 10px;
+    }
+    .bg.dark .card .num { color: #e8b4b4; }
+    .card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 18px;
+      line-height: 1.45;
+      opacity: 0.75;
+    }
+    .tree {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      max-width: 1400px;
+    }
+    .row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pill {
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(26,23,20,0.1);
+      border-radius: 999px;
+      padding: 14px 24px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .pill.root {
+      background: #8b3a3a;
+      color: #fff;
+      border: none;
+    }
+    .pill.soft { opacity: 0.9; }
+    .arrow { opacity: 0.35; font-size: 22px; }
+    .footer-note {
+      position: absolute;
+      left: 120px;
+      bottom: 64px;
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.45;
+    }
+    .brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+  
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#111}
+.slide{display:block}
+</style></head><body><section class="slide" id="s02">
+    <div class="bg"></div>
+    <div class="content" style="justify-content:flex-start;padding-top:88px">
+      <p class="eyebrow">Функции</p>
+      <h2>Что умеет витрина</h2>
+      <div class="grid">
+        <div class="card"><div class="num">01</div><h3>Умный каталог</h3><p>Фильтры по комнате, материалу, стране, цвету, форме, ворсу и цене. Поиск по названию и артикулу.</p></div>
+        <div class="card"><div class="num">02</div><h3>Карточка товара</h3><p>Галерея, размеры, характеристики, отзывы, похожие модели и визуализация в комнате.</p></div>
+        <div class="card"><div class="num">03</div><h3>Примерка дома</h3><p>Отдельный сценарий: выбрать до 2 ковров и согласовать выезд консультанта.</p></div>
+        <div class="card"><div class="num">04</div><h3>Корзина и списки</h3><p>Корзина, избранное и сравнение сохраняются в браузере — удобно для демонстрации UX.</p></div>
+        <div class="card"><div class="num">05</div><h3>Доставка и опт</h3><p>Страницы логистики и B2B для отелей, дизайнеров и партнёров.</p></div>
+        <div class="card"><div class="num">06</div><h3>Контент и бренд</h3><p>О компании, блог, контакты и форма заявки — единый визуальный язык.</p></div>
+      </div>
+    </div>
+    <div class="footer-note">02 · функции</div>
+  </section></body></html>
